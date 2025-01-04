@@ -90,8 +90,8 @@ def food_collision():
 
 # Random position for food
 def get_random_food_position():
-    x = random.randint(-w / 2 + food_size, w / 2 - food_size)
-    y = random.randint(-game_h / 2 + food_size, game_h / 2 - food_size)
+ x = random.randint(int(-w / 2 + food_size), int(w / 2 - food_size))
+y = random.randint(int(-game_h / 2 + food_size), int(game_h / 2 - food_size))
     return (x, y)
 
 def get_distance(pos1, pos2):
